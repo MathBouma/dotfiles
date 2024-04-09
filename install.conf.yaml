@@ -5,7 +5,9 @@
 - clean: ['~']
 
 - link:
-    ~/.zshrc: shells/zshrc
+    ~/.zshrc:
+        force: true
+        path: shells/zshrc
     ~/.zsh_aliases: shells/zsh_aliases
     ~/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting: modules/zsh-syntax-highlighting
     ~/.oh-my-zsh/custom/plugins/zsh-autosuggestions: modules/zsh-autosuggestions
@@ -14,3 +16,4 @@
 
 - shell:
     - [git submodule update --init --recursive, Installing submodules]
+    - [dotnet tool install --global csharpier, Adding csharpier]
