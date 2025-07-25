@@ -1,1 +1,7 @@
 alias -g tf="terraform"
+alias -g dno="dotnet-outdated -u -Pre Always -n"
+alias -g ef="dotnet ef"
+alias -g efu="dotnet ef database update"
+alias -g efa="dotnet ef migrations add"
+alias -g dnr="dotnet restore"
+alias -g dnb="dotnet build"
