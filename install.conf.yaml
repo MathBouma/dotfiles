@@ -13,6 +13,7 @@
     ~/.oh-my-zsh/custom/plugins/zsh-autosuggestions: modules/zsh-autosuggestions
     ~/.oh-my-zsh/custom/themes/spaceship.zsh-theme: modules/spaceship-prompt/spaceship.zsh-theme
     ~/.config/kitty: config/kitty
+    ~/.hushlogin: blankfile
 
 - shell:
     - [git submodule update --init --recursive, Installing submodules]
