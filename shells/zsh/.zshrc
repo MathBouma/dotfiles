@@ -25,7 +25,7 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && . "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
-#-------- Global Alias {{{
+#-------- Global Alias {{{ls
 globalias() {
   if [[ $LBUFFER =~ '[a-zA-Z0-9]+$' ]]; then
     zle _expand_alias
@@ -38,7 +38,7 @@ bindkey " " globalias                 # space key to expand globalalias
 # bindkey "^ " magic-space            # control-space to bypass completion
 bindkey "^[[Z" magic-space            # shift-tab to bypass completion
 bindkey -M isearch " " magic-space    # normal space during searches
-. ~/.zsh_aliases
+. ~/.config/zsh/.zsh_aliases
 #}}}
 
 SPACESHIP_PROMPT_ADD_NEWLINE="true"
@@ -47,4 +47,7 @@ SPACESHIP_CHAR_SYMBOL="⚡"
 # Turn off power status when using spaceship prompt
 export SPACESHIP_BATTERY_SHOW=false
 
-type neofetch && neofetch
+# Other config
+
+
+type fastfetch >/dev/null && fastfetchfd

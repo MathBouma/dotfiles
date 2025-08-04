@@ -5,10 +5,8 @@
 - clean: ['~']
 
 - link:
-    ~/.zshrc:
-        force: true
-        path: shells/zshrc
-    ~/.zsh_aliases: shells/zsh_aliases
+    ~/.zshenv: shells/.zshenv
+    ~/.config/zsh: shells/zsh 
     ~/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting: modules/zsh-syntax-highlighting
     ~/.oh-my-zsh/custom/plugins/zsh-autosuggestions: modules/zsh-autosuggestions
     ~/.oh-my-zsh/custom/themes/spaceship.zsh-theme: modules/spaceship-prompt/spaceship.zsh-theme
