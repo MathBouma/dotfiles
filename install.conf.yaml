@@ -7,13 +7,15 @@
 - link:
     ~/.zshenv: shells/.zshenv
     ~/.config/zsh: shells/zsh 
+    ~/.config/nvim: config/nvim
+    ~/.config/kitty: config/kitty
     ~/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting: modules/zsh-syntax-highlighting
     ~/.oh-my-zsh/custom/plugins/zsh-autosuggestions: modules/zsh-autosuggestions
     ~/.oh-my-zsh/custom/themes/spaceship.zsh-theme: modules/spaceship-prompt/spaceship.zsh-theme
-    ~/.config/kitty: config/kitty
     ~/.hushlogin: blankfile
 
 - shell:
     - [git submodule update --init --recursive, Installing submodules]
     - [dotnet tool install --global csharpier, Adding csharpier]
+    - [dotnet tool install --global csharp-ls]
     - [dotnet tool install --global dotnet-outdated-tool, Adding dotnet outdated]

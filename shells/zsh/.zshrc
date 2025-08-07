@@ -48,6 +48,6 @@ SPACESHIP_CHAR_SYMBOL="⚡"
 export SPACESHIP_BATTERY_SHOW=false
 
 # Other config
+export PATH="$PATH:~/.dotnet/tools"
 
-
-type fastfetch >/dev/null && fastfetchfd
+type fastfetch >/dev/null && fastfetch
