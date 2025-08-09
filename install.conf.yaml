@@ -20,4 +20,5 @@
     - [git submodule update --init --recursive, Installing submodules]
     - [dotnet tool install --global csharpier, Adding csharpier]
     - [dotnet tool install --global csharp-ls]
-    - [dotnet tool install --gobal dotnet-outdated-tool, Adding dotnet outdated]
+    - [dotnet tool install --global dotnet-outdated-tool, Adding dotnet outdated]
+
