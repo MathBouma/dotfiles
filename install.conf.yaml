@@ -18,7 +18,6 @@
 
 - shell:
     - [git submodule update --init --recursive, Installing submodules]
-    - [sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"]
     - [dotnet tool install --global csharpier, Adding csharpier]
     - [dotnet tool install --global csharp-ls]
-    - [dotnet tool install --global dotnet-outdated-tool, Adding dotnet outdated]
+    - [dotnet tool install --gobal dotnet-outdated-tool, Adding dotnet outdated]
