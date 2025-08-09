@@ -6,6 +6,7 @@ require("mason").setup({
     "github:Crashdummyy/mason-registry",
   },
 })
+vim.lsp.enable("rust_analyser", false)
 vim.lsp.config("roslyn", {
   on_attach = function()
     print("This will run when the server attaches!")

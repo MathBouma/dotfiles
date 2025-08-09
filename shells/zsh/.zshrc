@@ -49,5 +49,5 @@ export SPACESHIP_BATTERY_SHOW=false
 
 # Other config
 export PATH="$PATH:~/.dotnet/tools"
-
+export EDITOR="nvim"
 type fastfetch >/dev/null && fastfetch
