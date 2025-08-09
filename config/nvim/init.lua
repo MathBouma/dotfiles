@@ -20,4 +20,4 @@ vim.lsp.config("roslyn", {
     },
   },
 })
-require("toggleterm").setup({})
+vim.opt.shell = "zsh"
