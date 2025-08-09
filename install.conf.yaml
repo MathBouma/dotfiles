@@ -6,7 +6,9 @@
 
 - link:
     ~/.zshenv: shells/.zshenv
-    ~/.config/zsh: shells/zsh 
+    ~/.config/zsh:
+      force: true
+      path: shells/zsh
     ~/.config/nvim: config/nvim
     ~/.config/kitty: config/kitty
     ~/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting: modules/zsh-syntax-highlighting
