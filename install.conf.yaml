@@ -5,16 +5,26 @@
 - clean: ['~']
 
 - link:
-    ~/.zshenv: shells/.zshenv
+    ~/.zshenv: 
+      force: true
+      path: shells/.zshenv
     ~/.config/zsh:
       force: true
       path: shells/zsh
-    ~/.config/nvim: config/nvim
-    ~/.config/kitty: config/kitty
-    ~/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting: modules/zsh-syntax-highlighting
-    ~/.oh-my-zsh/custom/plugins/zsh-autosuggestions: modules/zsh-autosuggestions
-    ~/.oh-my-zsh/custom/themes/spaceship.zsh-theme: modules/spaceship-prompt/spaceship.zsh-theme
-    ~/.hushlogin: blankfile
+    ~/.config/nvim: 
+      force: true
+      path: config/nvim
+    ~/.config/kitty: 
+      force: true
+      path: config/kitty
+    ~/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting: 
+      path: modules/zsh-syntax-highlighting
+    ~/.oh-my-zsh/custom/plugins/zsh-autosuggestions: 
+      path: modules/zsh-autosuggestions
+    ~/.oh-my-zsh/custom/themes/spaceship.zsh-theme: 
+      path: modules/spaceship-prompt/spaceship.zsh-theme
+    ~/.hushlogin: 
+      path: blankfile
 
 - shell:
     - [git submodule update --init --recursive, Installing submodules]
