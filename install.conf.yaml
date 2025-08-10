@@ -4,6 +4,9 @@
 
 - clean: ['~']
 
+- create:
+    - ~/.config
+
 - link:
     ~/.zshenv: 
       force: true
@@ -18,10 +21,13 @@
       force: true
       path: config/kitty
     ~/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting: 
+      force: true
       path: modules/zsh-syntax-highlighting
     ~/.oh-my-zsh/custom/plugins/zsh-autosuggestions: 
+      force: true
       path: modules/zsh-autosuggestions
     ~/.oh-my-zsh/custom/themes/spaceship.zsh-theme: 
+      force: true
       path: modules/spaceship-prompt/spaceship.zsh-theme
     ~/.hushlogin: 
       path: blankfile
