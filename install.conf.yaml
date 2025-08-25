@@ -34,7 +34,7 @@
 
 - shell:
     - [git submodule update --init --recursive, Installing submodules]
-    - [dotnet tool install --global csharpier, Adding csharpier]
+    - [dotnet tool install -g csharpier --version 1.0.3 --allow-downgrade, Adding csharpier]
     - [dotnet tool install --global csharp-ls]
     - [dotnet tool install --global dotnet-outdated-tool, Adding dotnet outdated]
 
